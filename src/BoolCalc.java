@@ -16,22 +16,21 @@ import javax.script.ScriptException;
 public class BoolCalc {
 	
 	public static void main(String[] args) {
-		//perumuationsWithRep(3);
-		String predicate = "(A or B) and (B and C)";
-		String joined = predicate.replace(", " , " and ");
-		deduce(joined);
-		/*
-		else {
-			System.out.println("Please enter a valid string (Example: \"( (A and B) or (B or C) )\" ");
+		Vector<String> predicate = new Vector<String>(); 
+		for(int i = 0; i < args.length; i++) {
+			predicate.add(args[i]); 
 		}
-		*/
+
+        String joined = String.join(" ", predicate);
+        joined = joined.replace(",", " and ");
+        System.out.println(joined);
+		deduce(joined);
 	}
 
 	private static void deduce(String predicate) {
 		String[] alphabet = {"A", "B", "C", "D", "E", "F", "G", "H","I",
 							"J", "K", "L", "M","N", "O", "P","Q", "R",
 							"S", "T", "U", "V", "W", "X", "Y", "Z"};
-
 		
 		Vector<String> varVec = new Vector<String>();
 
