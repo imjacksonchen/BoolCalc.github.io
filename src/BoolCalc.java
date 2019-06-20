@@ -21,9 +21,9 @@ public class BoolCalc {
 			predicate.add(args[i]); 
 		}
 
-        String joined = String.join(" ", predicate);
-        joined = joined.replace(",", " and ");
-        System.out.println(joined);
+        	String joined = String.join(" ", predicate);
+       		joined = joined.replace(",", " and ");
+        	System.out.println(joined);
 		deduce(joined);
 	}
 
