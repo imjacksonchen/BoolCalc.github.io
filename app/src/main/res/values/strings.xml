@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Boolean Calculator</string>
+    <string name="instructions">How to use: Type in a valid boolean expression using the alphabet.
+    along with boolean logic (and, or). Example: (A and B), (B or C)</string>
+
+</resources>
